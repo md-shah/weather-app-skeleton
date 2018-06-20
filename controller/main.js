@@ -24,7 +24,7 @@ let fetchData = (locVal,callback) => {
         
     });
    
-    // console.log('call from dispdata')
+    // console.log('cal from dispdata')
 }
 
 
