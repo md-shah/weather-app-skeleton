@@ -21,4 +21,5 @@ app.get('/location', (req, res) => {
 
 app.listen(8080, function () {
     console.log('Running on port 8080')
+    console.log('iugfksjbf.sdnf')
 })
