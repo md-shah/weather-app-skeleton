@@ -2,6 +2,8 @@ var express = require('express')
 var app = express()
 var main = require('./controller/main')
 
+var port = process.env.PORT || 8080;
+
 app.use(express.static('public'))
 app.set('view engine', 'ejs') //Setting EJS as default view Engine
 app.set('views', (__dirname + '/views')) //Setting default folder to check the EJS files
@@ -32,6 +34,6 @@ app.get('/location', (req, res) => {
 
 })
 
-app.listen(3000, () => {
-    console.log('Port open on 3000')
+app.listen(port, () => {
+    console.log(`Port open on ${port}`)
 })
